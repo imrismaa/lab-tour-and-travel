@@ -20,5 +20,5 @@ Route::get('/paket', function () {
 
 // admin
 Route::get('/admin-paket', function () {
-    return view('admin.admin-paket');
+    return view('admin.dashboard-nav');
 });

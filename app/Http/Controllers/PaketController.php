@@ -13,6 +13,6 @@ class PaketController extends Controller
 
     public function admin()
     {
-        return view('admin.admin-paket');
+        return view('admin.dashboard-nav');
     }
 }

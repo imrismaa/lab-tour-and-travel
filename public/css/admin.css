@@ -12,4 +12,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+}
+
+.menu-active {
+  background-color: #3198D4;
+}
+
+.menu:hover {
+  background-color: #3198D4;
+}
+
+.logout-container:hover {
+  background-color: #3198D4;
+}
+
+input {
+  border: solid #919191 2px !important;
+}
+
+.profile-circle {
+  background-color: #3BB7FF;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
