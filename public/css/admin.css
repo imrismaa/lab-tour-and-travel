@@ -72,3 +72,7 @@ input {
 .admin-table td {
   text-align: center;
 }
+
+.form-container {
+  padding: 0% 20%;
+}

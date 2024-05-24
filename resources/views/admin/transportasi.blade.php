@@ -1,9 +1,9 @@
 @extends('admin.dashboard-nav')
 
 @section('content')
-<a href="{{ route('tambah-destinasi') }}">
+<a href="{{ route('tambah-transportasi') }}">
     <button class="blue-pil">
-        + Tambah Destinasi
+        + Tambah Transportasi
     </button>
 </a>
 
@@ -13,10 +13,7 @@
             <th class="p-2">No</th>
             <th class="p-2">Foto</th>
             <th class="p-2">Nama</th>
-            <th class="p-2">Kota</th>
-            <th class="p-2">Jam Buka</th>
-            <th class="p-2">Jam Tutup</th>
-            <th class="p-2">Saran Durasi</th>
+            <th class="p-2">Daya Tampung</th>
             <th class="p-2">Harga</th>
             <th class="p-2">Aksi</th>
         </tr>
@@ -27,11 +24,8 @@
             <td class="py-4">
                 <img src="{{ asset('images/hero.png') }}" width=50px">
             </td>
-            <td class="py-4">Benteng Vredeburg</td>
-            <td class="py-4">Yogyakarta</td>
-            <td class="py-4">08.00</td>
-            <td class="py-4">15.30</td>
-            <td class="py-4">2 Jam</td>
+            <td class="py-4">Bus</td>
+            <td class="py-4">50</td>
             <td class="py-4">Rp. 100.000</td>
             <td>
                 <a href="" style="text-decoration: none;">
@@ -58,11 +52,8 @@
             <td class="py-4">
                 <img src="{{ asset('images/hero.png') }}" width=50px">
             </td>
-            <td class="py-4">Benteng Vredeburg</td>
-            <td class="py-4">Yogyakarta</td>
-            <td class="py-4">08.00</td>
-            <td class="py-4">15.30</td>
-            <td class="py-4">2 Jam</td>
+            <td class="py-4">Bus</td>
+            <td class="py-4">50</td>
             <td class="py-4">Rp. 100.000</td>
             <td>
                 <a href="" style="text-decoration: none;">
