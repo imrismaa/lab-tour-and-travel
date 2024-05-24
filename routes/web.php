@@ -19,6 +19,10 @@ Route::get('/paket', function () {
 });
 
 // admin
-Route::get('/admin-paket', function () {
+Route::get('/admin-nav', function () {
     return view('admin.dashboard-nav');
+});
+
+Route::get('/destinasi', function () {
+    return view('admin.destinasi');
 });

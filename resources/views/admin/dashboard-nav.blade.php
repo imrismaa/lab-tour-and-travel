@@ -71,32 +71,37 @@
                 </a>
             </div>
         </div>
-        <div class="col d-flex justify-content-between align-items-center pe-5" style="height: 50px;">
-            <form class="ms-3 mt-5">
-                <div class="search-box w-10">
-                    <div class="position-absolute" style="z-index: 4;">
-                        <div class="input-group-text justify-content-center" style="background-color: transparent !important; border: none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 12 12">
-                                <path fill="#919191" d="M11.133 10.93L8.396 7.96c.703-.873 1.089-1.972 1.089-3.115C9.485 2.174 7.402 0 4.842 0 2.282 0 .199 2.174.199 4.845S2.282 9.69 4.842 9.69c.96 0 1.877-.303 2.66-.877l2.758 2.993c.115.125.27.194.436.194.157 0 .306-.063.42-.176.24-.242.248-.643.017-.894zM4.842 1.264c1.892 0 3.432 1.606 3.432 3.581 0 1.975-1.54 3.581-3.432 3.581-1.893 0-3.432-1.606-3.432-3.581 0-1.975 1.54-3.581 3.432-3.581z"></path>
-                            </svg>
+        <div class="container">
+            <div class="col d-flex justify-content-between align-items-center pe-5" style="height: 50px;">
+                <form class="ms-3 mt-5">
+                    <div class="search-box w-10">
+                        <div class="position-absolute" style="z-index: 4;">
+                            <div class="input-group-text justify-content-center" style="background-color: transparent !important; border: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 12 12">
+                                    <path fill="#919191" d="M11.133 10.93L8.396 7.96c.703-.873 1.089-1.972 1.089-3.115C9.485 2.174 7.402 0 4.842 0 2.282 0 .199 2.174.199 4.845S2.282 9.69 4.842 9.69c.96 0 1.877-.303 2.66-.877l2.758 2.993c.115.125.27.194.436.194.157 0 .306-.063.42-.176.24-.242.248-.643.017-.894zM4.842 1.264c1.892 0 3.432 1.606 3.432 3.581 0 1.975-1.54 3.581-3.432 3.581-1.893 0-3.432-1.606-3.432-3.581 0-1.975 1.54-3.581 3.432-3.581z"></path>
+                                </svg>
+                            </div>
                         </div>
+                    </div> 
+                    <input type="text" autocomplete="off" class="search-custom form-control ps-5"> 
+                </form>
+                <div class="col d-flex justify-content-end mt-4">
+                    <div class="rounded-circle profile-circle text-center justify-content-center align-items-center mx-1 m-auto pt-1" style="width: 36px; height: 36px;">J</div>
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20" style="color: #919191;">
+                            Joko
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Option</a></li>
+                        </ul>
                     </div>
-                </div> 
-                <input type="text" autocomplete="off" class="search-custom form-control ps-5"> 
-            </form>
-            <div class="col d-flex justify-content-end mt-4">
-                <div class="rounded-circle profile-circle text-center justify-content-center align-items-center mx-1 m-auto pt-1" style="width: 36px; height: 36px;">J</div>
-                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20" style="color: #919191;">
-                        Joko
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Option</a></li>
-                    </ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#242424" class="bi bi-bell mx-3 mt-4" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                    </svg>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#242424" class="bi bi-bell mx-3 mt-4" viewBox="0 0 16 16">
-                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
-                </svg>
+                <div class="container mt-4">
+                    @yield('content')
+                </div>
             </div>
         </div>
     </div>

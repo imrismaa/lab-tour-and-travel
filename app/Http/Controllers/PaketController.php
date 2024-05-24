@@ -15,4 +15,9 @@ class PaketController extends Controller
     {
         return view('admin.dashboard-nav');
     }
+
+    public function destinasi()
+    {
+        return view('admin.destinasi');
+    }
 }
