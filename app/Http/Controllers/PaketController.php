@@ -11,9 +11,9 @@ class PaketController extends Controller
         return view('paket.paket');
     }
 
-    public function admin()
+    public function dashboardAdmin()
     {
-        return view('admin.dashboard-nav');
+        return view('layout.dashboard-nav');
     }
 
     public function destinasi()

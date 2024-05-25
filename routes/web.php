@@ -20,9 +20,7 @@ Route::get('/paket', function () {
 });
 
 // admin
-Route::get('/admin-nav', function () {
-    return view('admin.dashboard-nav');
-});
+Route::get('/dashboard-nav', [PaketController::class, 'dashboardAdmin'])->name('dashboard-nav');
 
 Route::get('/destinasi', [PaketController::class, 'destinasi'])->name('destinasi');
 Route::get('tambah-destinasi', [PaketController::class, 'tambahDestinasi'])->name('tambah-destinasi');

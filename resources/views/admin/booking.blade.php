@@ -1,4 +1,4 @@
-@extends('admin.dashboard-nav')
+@extends('layouts.dashboard-nav')
 
 @section('content')
 <table class="admin-table mt-3">
