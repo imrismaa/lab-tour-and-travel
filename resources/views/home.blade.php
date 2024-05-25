@@ -7,6 +7,7 @@
         <meta name="author" content="" />
         <title>Lab Tour and Travel</title>
         <link href="css/home.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
         <link rel="icon" href="/logo.ico">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     </head>
@@ -21,7 +22,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#paket">Paket</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('paket') }}">Paket</a></li>
                         <li class="nav-item"><a class="nav-link" href="#custom">Custom</a></li>
                         <li class="nav-item"><a class="nav-link btn btn-primary" href="#login">Login</a></li>
                     </ul>
@@ -55,72 +56,210 @@
                 <div class="text-center">
                     <h3 class="section-heading">Paket Wisata</h3>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <section id="paket" class="p-3 pb-5">
+    <div class="layout-container">
+        <div class="filter-wisata my-auto py-5 px-5">
+            <h4 class="text-start">Filter Paket Wisata</h4>
+            <div class="row text-start mt-3">
+                <div class="col-md-3 px-3">
+                    <p>Destinasi</p>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" id="dropdownMenuButton">Temukan destinasi</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <label><input type="checkbox" value="Pilihan 1"> Option 1</label>
+                            <label><input type="checkbox" value="Pilihan 2"> Option 2</label>
+                            <label><input type="checkbox" value="Pilihan 3"> Option 3</label>
+                            <div class="row px-3">
+                                <div class="col">
+                                    <a href="" class="blue-link">Hapus</a>
+                                </div>
+                                <div class="col">
+                                    <button class="blue-pil">Terapkan</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-3 px-3">
+                    <p>Tema</p>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" id="dropdownMenuButton">Pilih tema wisata</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <label><input type="checkbox" value="Pilihan 1"> Option 1</label>
+                            <label><input type="checkbox" value="Pilihan 2"> Option 2</label>
+                            <label><input type="checkbox" value="Pilihan 3"> Option 3</label>
+                            <div class="row px-3">
+                                <div class="col">
+                                    <a href="" class="blue-link">Hapus</a>
+                                </div>
+                                <div class="col">
+                                    <button class="blue-pil">Terapkan</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-3 px-3">
+                    <p>Durasi</p>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" id="dropdownMenuButton">Durasi wisata</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <label><input type="checkbox" value="Pilihan 1"> Option 1</label>
+                            <label><input type="checkbox" value="Pilihan 2"> Option 2</label>
+                            <label><input type="checkbox" value="Pilihan 3"> Option 3</label>
+                            <div class="row px-3">
+                                <div class="col">
+                                    <a href="" class="blue-link">Hapus</a>
+                                </div>
+                                <div class="col">
+                                  <button class="blue-pil">Terapkan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 px-3">
+                    <p>Harga</p>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" id="dropdownMenuButton">Rp 0 - Rp 120.000.000</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <label><input type="checkbox" value="Pilihan 1"> Option 1</label>
+                            <label><input type="checkbox" value="Pilihan 2"> Option 2</label>
+                            <label><input type="checkbox" value="Pilihan 3"> Option 3</label>
+                            <div class="row px-3">
+                                <div class="col">
+                                    <a href="" class="blue-link">Hapus</a>
+                                </div>
+                                <div class="col">
+                                    <button class="blue-pil">Terapkan</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        @section('content')
-        <!-- Services-->
-        <section class="page-section" id="custom">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+
+<div class="layout-container">
+    <div class="row row-custom justify-content-start">
+        <div class="col col-custom d-flex">
+            <div class="card" style="width: 16rem;">
+                <div class="card-body">
+                    <img src="/images/image1.png" class="card-pict" alt="Your Image">
+                    <div class="overlay-container">
+                        <div class="overlay-text">
+                            <p class="paket">Lorem ipsum dolor sit amet</p>
+                            <span class="badge price">Rp. 150.000</span>
+                            <a href="#"><p>Lihat detail ></a></p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col col-custom d-flex">
+            <div class="card" style="width: 16rem;">
+                <div class="card-body"> 
+                    <img src="/images/image2.jpg" class="card-pict" alt="Your Image">
+                    <div class="overlay-container">
+                        <div class="overlay-text">
+                            <p class="paket">Lorem ipsum dolor sit amet</p>
+                            <span class="badge price">Rp. 150.000</span>
+                            <a href="#"><p>Lihat detail ></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-custom d-flex">
+            <div class="card" style="width: 16rem;">
+                <div class="card-body"> 
+                    <img src="/images/image3.jpg" class="card-pict" alt="Your Image">
+                    <div class="overlay-container">
+                        <div class="overlay-text">
+                            <p class="paket">Lorem ipsum dolor sit amet</p>
+                            <span class="badge price">Rp. 150.000</span>
+                            <a href="#"><p>Lihat detail ></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-custom d-flex">
+            <div class="card" style="width: 16rem;">
+                <div class="card-body"> 
+                    <img src="/images/image4.jpg" class="card-pict" alt="Your Image">
+                    <div class="overlay-container">
+                        <div class="overlay-text">
+                            <p class="paket">Lorem ipsum dolor sit amet</p>
+                            <span class="badge price">Rp. 150.000</span>
+                            <a href="#"><p>Lihat detail ></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-custom d-flex">
+              <div class="card" style="width: 16rem;">
+                <div class="card-body"> 
+                  <img src="/images/image5.jpg" class="card-pict" alt="Your Image">
+                  <div class="overlay-container">
+                    <div class="overlay-text">
+                      <p class="paket">Lorem ipsum dolor sit amet</p>
+                      <span class="badge price">Rp. 150.000</span>
+                      <a href="#"><p>Lihat detail ></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-custom d-flex">
+              <div class="card" style="width: 16rem;">
+                <div class="card-body"> 
+                  <img src="/images/image6.jpg" class="card-pict" alt="Your Image">
+                  <div class="overlay-container">
+                    <div class="overlay-text">
+                      <p class="paket">Lorem ipsum dolor sit amet</p>
+                      <span class="badge price">Rp. 150.000</span>
+                      <a href="#"><p>Lihat detail ></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-custom d-flex">
+              <div class="card" style="width: 16rem;">
+                <div class="card-body"> 
+                  <img src="/images/image7.jpg" class="card-pict" alt="Your Image">
+                  <div class="overlay-container">
+                    <div class="overlay-text">
+                      <p class="paket">Lorem ipsum dolor sit amet</p>
+                      <span class="badge price">Rp. 150.000</span>
+                      <a href="#"><p>Lihat detail ></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-custom d-flex">
+              <div class="card" style="width: 16rem;">
+                <div class="card-body"> 
+                  <img src="/images/image8.jpg" class="card-pict" alt="Your Image">
+                  <div class="overlay-container">
+                    <div class="overlay-text">
+                      <p class="paket">Lorem ipsum dolor sit amet</p>
+                      <span class="badge price">Rp. 150.000</span>
+                      <a href="#"><p>Lihat detail ></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
         </section>
-        @endsection
         
         <!-- Footer-->
         <footer class="footer">

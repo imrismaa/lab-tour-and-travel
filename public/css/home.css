@@ -3826,6 +3826,13 @@ textarea.form-control-lg {
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
 }
+
+.navbar-custom {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+}
+
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
@@ -11015,4 +11022,12 @@ form {
 
 .footer-copyright {
   border-top: solid #000 2px;
+}
+
+.card .card-pict {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 0.5s;
 }

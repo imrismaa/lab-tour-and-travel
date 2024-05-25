@@ -8,6 +8,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/login', [LandingPageController::class, 'login'])->name('login');
+Route::get('/register', [LandingPageController::class, 'register'])->name('register');
 Route::get('/home', [LandingPageController::class, 'home']);
 
 
@@ -15,9 +18,7 @@ Route::get('/app-layout', function () {
     return view('layouts.app');
 });
 
-Route::get('/paket', function () {
-    return view('paket.paket');
-});
+Route::get('/paket', [PaketController::class, 'index'])->name('paket');
 
 // admin
 Route::get('/dashboard-nav', [PaketController::class, 'dashboardAdmin'])->name('dashboard-nav');
