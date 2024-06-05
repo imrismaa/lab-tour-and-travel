@@ -31,3 +31,5 @@ Route::get('/transportasi', [PaketController::class, 'transportasi'])->name('tra
 Route::get('/tambah-transportasi', [PaketController::class, 'tambahTransportasi'])->name('tambah-transportasi');
 Route::get('/custom', [PaketController::class, 'custom'])->name('custom');
 Route::get('/booking', [PaketController::class, 'booking'])->name('booking');
+Route::get('/paket-admin', [PaketController::class, 'paket'])->name('paket-admin');
+Route::get('/tambah-paket', [PaketController::class, 'tambahPaket'])->name('tambah-paket');

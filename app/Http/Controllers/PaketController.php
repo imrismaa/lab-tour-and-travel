@@ -54,4 +54,12 @@ class PaketController extends Controller
     {
         return view('admin.booking');
     }
+    public function paket()
+    {
+        return view('admin.paket');
+    }
+    public function tambahPaket()
+    {
+        return view('admin.tambah-paket');
+    }
 }
