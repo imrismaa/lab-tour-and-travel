@@ -31,6 +31,10 @@ input {
   border: solid #919191 2px !important;
 }
 
+select {
+  border: solid #919191 2px !important;
+}
+
 .profile-circle {
   background-color: #3BB7FF;
   align-items: center;

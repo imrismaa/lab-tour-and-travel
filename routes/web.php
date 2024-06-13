@@ -19,6 +19,11 @@ Route::get('/app-layout', function () {
 });
 
 Route::get('/paket', [PaketController::class, 'index'])->name('paket');
+Route::get('/detail-paket', [PaketController::class, 'detailPaket'])->name('detail-paket');
+
+// pesan paket
+Route::get('/pilih-paket', [PaketController::class, 'pilihPaket'])->name('pilih-paket');
+Route::get('/data-diri', [PaketController::class, 'dataDiri'])->name('data-diri');
 
 // admin
 Route::get('/dashboard-nav', [PaketController::class, 'dashboardAdmin'])->name('dashboard-nav');

@@ -11,6 +11,11 @@ class PaketController extends Controller
         return view('paket.paket');
     }
 
+    public function detailPaket()
+    {
+        return view('paket.detail-paket');
+    }
+
     public function dashboardAdmin()
     {
         return view('layout.dashboard-nav');
@@ -61,5 +66,17 @@ class PaketController extends Controller
     public function tambahPaket()
     {
         return view('admin.tambah-paket');
+    }
+
+
+
+
+    public function pilihPaket()
+    {
+        return view('pesan-paket.pilih-paket');
+    }
+    public function dataDiri()
+    {
+        return view('pesan-paket.data-diri');
     }
 }

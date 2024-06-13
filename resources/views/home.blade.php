@@ -57,19 +57,20 @@
                     <h3 class="section-heading">Paket Wisata</h3>
                 </div>
             </div>
-            <section id="paket" class="p-3 pb-5">
-    <div class="layout-container">
+        <section id="paket" class="p-3 pb-5">
+        <div class="layout-container">
         <div class="filter-wisata my-auto py-5 px-5">
             <h4 class="text-start">Filter Paket Wisata</h4>
             <div class="row text-start mt-3">
                 <div class="col-md-3 px-3">
                     <p>Destinasi</p>
                     <div class="dropdown">
-                        <button class="dropdown-toggle" id="dropdownMenuButton">Temukan destinasi</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <label><input type="checkbox" value="Pilihan 1"> Option 1</label>
-                            <label><input type="checkbox" value="Pilihan 2"> Option 2</label>
-                            <label><input type="checkbox" value="Pilihan 3"> Option 3</label>
+                        <button class="dropdown-toggle toggle-destinasi" id="dropdownMenuButton">Temukan destinasi</button>
+                        <div class="dropdown-menu menu-destinasi" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-container">
+                                <label><input type="checkbox" value="Pilihan 1">Yogyakarta</label>
+                                <label><input type="checkbox" value="Pilihan 2">Luar Yogyakarta</label>
+                            </div>
                             <div class="row px-3">
                                 <div class="col">
                                     <a href="" class="blue-link">Hapus</a>
@@ -84,11 +85,34 @@
                 <div class="col-md-3 px-3">
                     <p>Tema</p>
                     <div class="dropdown">
-                        <button class="dropdown-toggle" id="dropdownMenuButton">Pilih tema wisata</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <label><input type="checkbox" value="Pilihan 1"> Option 1</label>
-                            <label><input type="checkbox" value="Pilihan 2"> Option 2</label>
-                            <label><input type="checkbox" value="Pilihan 3"> Option 3</label>
+                        <button class="dropdown-toggle toggle-tema" id="dropdownMenuButton">Pilih tema wisata</button>
+                        <div class="dropdown-menu menu-tema" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-container">
+                                <label><input type="checkbox" value="Pilihan 1">Alam</label>
+                                <label><input type="checkbox" value="Pilihan 2">Kota</label>
+                                <label><input type="checkbox" value="Pilihan 3">Edukasi</label>
+                                <label><input type="checkbox" value="Pilihan 3">Seni & Budaya</label>
+                                <label><input type="checkbox" value="Pilihan 3">Religi</label>
+                                <label><input type="checkbox" value="Pilihan 3">Keluarga</label>
+                                <label><input type="checkbox" value="Pilihan 3">Belanja</label>
+                                <label><input type="checkbox" value="Pilihan 3">Wahana Bermain</label>
+                                <label><input type="checkbox" value="Pilihan 3">Olahraga</label>
+                                <label><input type="checkbox" value="Pilihan 3">Kuliner</label>
+                                <label><input type="checkbox" value="Pilihan 3">Outdoor</label>
+                                <label><input type="checkbox" value="Pilihan 3">Indoor</label>
+                                <label><input type="checkbox" value="Pilihan 3">Tanaman</label>
+                                <label><input type="checkbox" value="Pilihan 3">Binatang</label>
+                                <label><input type="checkbox" value="Pilihan 3">Street Food</label>
+                                <label><input type="checkbox" value="Pilihan 3">Sea Food</label>
+                                <label><input type="checkbox" value="Pilihan 3">Vegetarian</label>
+                                <label><input type="checkbox" value="Pilihan 3">Eksotis</label>
+                                <label><input type="checkbox" value="Pilihan 3">Lokal</label>
+                                <label><input type="checkbox" value="Pilihan 3">Tradisional</label>
+                                <label><input type="checkbox" value="Pilihan 3">Modern</label>
+                                <label><input type="checkbox" value="Pilihan 3">Lesehan</label>
+                                <label><input type="checkbox" value="Pilihan 3">Prasmanan</label>
+                                <label><input type="checkbox" value="Pilihan 3">Kafe</label>
+                            </div>
                             <div class="row px-3">
                                 <div class="col">
                                     <a href="" class="blue-link">Hapus</a>
@@ -103,11 +127,16 @@
                 <div class="col-md-3 px-3">
                     <p>Durasi</p>
                     <div class="dropdown">
-                        <button class="dropdown-toggle" id="dropdownMenuButton">Durasi wisata</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <label><input type="checkbox" value="Pilihan 1"> Option 1</label>
-                            <label><input type="checkbox" value="Pilihan 2"> Option 2</label>
-                            <label><input type="checkbox" value="Pilihan 3"> Option 3</label>
+                        <button class="dropdown-toggle toggle-durasi" id="dropdownMenuButton">Durasi wisata</button>
+                        <div class="dropdown-menu menu-durasi" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-container">
+                                <label><input type="checkbox" value="Pilihan 1">1 Hari</label>
+                                <label><input type="checkbox" value="Pilihan 2">2 Hari</label>
+                                <label><input type="checkbox" value="Pilihan 3">3 Hari</label>
+                                <label><input type="checkbox" value="Pilihan 4">4 Hari</label>
+                                <label><input type="checkbox" value="Pilihan 5">5 Hari</label>
+                                <label><input type="checkbox" value="Pilihan 6">>5 Hari</label>
+                            </div>
                             <div class="row px-3">
                                 <div class="col">
                                     <a href="" class="blue-link">Hapus</a>
@@ -122,11 +151,13 @@
                 <div class="col-md-3 px-3">
                     <p>Harga</p>
                     <div class="dropdown">
-                        <button class="dropdown-toggle" id="dropdownMenuButton">Rp 0 - Rp 120.000.000</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <label><input type="checkbox" value="Pilihan 1"> Option 1</label>
-                            <label><input type="checkbox" value="Pilihan 2"> Option 2</label>
-                            <label><input type="checkbox" value="Pilihan 3"> Option 3</label>
+                        <button class="dropdown-toggle toggle-harga" id="dropdownMenuButton">Rp 0 - Rp 120.000.000</button>
+                        <div class="dropdown-menu menu-harga" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-container">
+                                <label><input type="checkbox" value="Pilihan 1"> Option 1</label>
+                                <label><input type="checkbox" value="Pilihan 2"> Option 2</label>
+                                <label><input type="checkbox" value="Pilihan 3"> Option 3</label>
+                            </div>
                             <div class="row px-3">
                                 <div class="col">
                                     <a href="" class="blue-link">Hapus</a>
@@ -307,5 +338,70 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var toggleDestinasi = document.querySelector(".toggle-destinasi");
+                var menuDestinasi = document.querySelector(".menu-destinasi");
+
+                toggleDestinasi.addEventListener("click", function(event) {
+                event.stopPropagation();
+                menuDestinasi.classList.toggle("show");
+                });
+
+                window.addEventListener("click", function(event) {
+                if (!menuDestinasi.contains(event.target)) {
+                    menuDestinasi.classList.remove("show");
+                }
+                });
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+                var toggleTema = document.querySelector(".toggle-tema");
+                var menuTema = document.querySelector(".menu-tema");
+
+                toggleTema.addEventListener("click", function(event) {
+                event.stopPropagation();
+                menuTema.classList.toggle("show");
+                });
+
+                window.addEventListener("click", function(event) {
+                if (!menuTema.contains(event.target)) {
+                    menuTema.classList.remove("show");
+                }
+                });
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+                var toggleDurasi = document.querySelector(".toggle-durasi");
+                var menuDurasi = document.querySelector(".menu-durasi");
+
+                toggleDurasi.addEventListener("click", function(event) {
+                event.stopPropagation();
+                menuDurasi.classList.toggle("show");
+                });
+
+                window.addEventListener("click", function(event) {
+                if (!menuDurasi.contains(event.target)) {
+                    menuDurasi.classList.remove("show");
+                }
+                });
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+                var toggleHarga = document.querySelector(".toggle-harga");
+                var menuHarga = document.querySelector(".menu-harga");
+
+                toggleHarga.addEventListener("click", function(event) {
+                event.stopPropagation();
+                menuHarga.classList.toggle("show");
+                });
+
+                window.addEventListener("click", function(event) {
+                if (!menuHarga.contains(event.target)) {
+                    menuHarga.classList.remove("show");
+                }
+                });
+            });
+        </script>
     </body>
 </html>
