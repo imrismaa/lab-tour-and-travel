@@ -169,3 +169,120 @@ a{
 .text-green {
     color: #29BF12;
 }
+
+.img-confirm{
+    height: 400px;
+    object-fit: cover;
+}
+
+.summary {
+    width: 50%;
+}
+
+.font-neutral {
+    color: #6D6D6D;
+}
+
+.upload {
+    background-color: #F4F4F4;
+    border: dashed 2px #919191;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 100px;
+}
+
+.img-upload {
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.step-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
+    flex-direction: row;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.step-text {
+    margin-left: 8px;
+    position: relative;
+    padding-right: 20px;
+}
+
+.step-text::after {
+    content: '';
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 10px);
+    width: calc(100% + 5px);
+    transform: translateY(-50%);
+}
+
+.step:last-child .step-text::after {
+    content: none;
+}
+
+.step.active .step-circle {
+    background-color: #3BB7FF;
+    color: #fff;
+}
+
+.step.active .step-text::after {
+    background-color: #3BB7FF;
+}
+
+.step-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.container-custom {
+    display: inline-block;
+    margin: 0 100px;
+}
+
+.input-destinasi {
+    border: none !important;
+    border-bottom: 2px solid #919191 !important;
+    background-color: transparent;
+    width: 100%;
+}
+
+.input-destinasi::placeholder {
+    color: #919191;
+}
+
+.input-destinas:focus{
+    outline: none !important;
+    border: none !important;
+}
+
+*:focus {
+    outline: none;
+}
+
+.step-container-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 350px;
+    flex-direction: row;
+}

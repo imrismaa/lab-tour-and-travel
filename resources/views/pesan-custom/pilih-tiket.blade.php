@@ -1,4 +1,4 @@
-@extends('layouts.pesan-paket-nav')
+@extends('layouts.pesan-custom-nav')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
@@ -35,7 +35,7 @@
     </form>
     <div class="container d-flex flex-row justify-content-between">
         <p>Jumlah Pembayaran <b class="text-green">Rp. 150.000</b></p>
-        <a href="{{route('data-diri')}}">
+        <a href="{{route('custom-data-diri')}}">
             <div class="blue-pil m-auto p-auto">Pesan sekarang</div>
         </a>
     </div>
