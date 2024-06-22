@@ -43,6 +43,8 @@ Route::get('/dashboard-nav', [PaketController::class, 'dashboardAdmin'])->name('
 
 Route::get('/destinasi', [PaketController::class, 'destinasi'])->name('destinasi');
 Route::get('tambah-destinasi', [PaketController::class, 'tambahDestinasi'])->name('tambah-destinasi');
+Route::get('detail-paket-admin', [PaketController::class, 'detailPaketAdmin'])->name('detail-paket-admin');
+Route::get('tambah-jadwal-destinasi', [PaketController::class, 'tambahJadwalDestinasi'])->name('tambah-jadwal-destinasi');
 
 Route::get('/penginapan', [PaketController::class, 'penginapan'])->name('penginapan');
 Route::get('/tambah-penginapan', [PaketController::class, 'tambahPenginapan'])->name('tambah-penginapan');

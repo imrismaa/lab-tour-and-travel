@@ -42,29 +42,31 @@
         <input type="text" name="name" id="name" class="form-control mb-3 mt-2" required>
         <label for="name">Tema Destinasi</label>
             <select name="transportasi" id="transportasi" class="form-control mb-3 mt-2">
-                <option value="1">--Pilih Tema Destinasi--</option>
-                <option value="2">Alam</option>
-                <option value="3">Kota</option>
-                <option value="4">Edukasi</option>
-                <option value="5">Seni & Budaya</option>
-                <option value="6">Religi</option>
-                <option value="7">Keluarga</option>
-                <option value="8">Belanja</option>
-                <option value="8">Wahana Bermain</option>
-                <option value="8">Olahraga</option>
-                <option value="8">Kuliner</option>
-                <option value="8">Outdoor</option>
-                <option value="8">Indoor</option>
-                <option value="8">Tanaman</option>
-                <option value="8">Binatang</option>
-                <option value="8">Street Food</option>
-                <option value="8">Sea Food</option>
-                <option value="8">Belanja</option>
-                <option value="8">Belanja</option>
-                <option value="8">Belanja</option>
-                <option value="8">Belanja</option>
-                <option value="8">Belanja</option>
-                <option value="8">Belanja</option>
+                <option value="">--Pilih Tema Destinasi--</option>
+                <option value="alam">Alam</option>
+                <option value="kota">Kota</option>
+                <option value="edukasi">Edukasi</option>
+                <option value="seni budaya">Seni & Budaya</option>
+                <option value="religi">Religi</option>
+                <option value="keluarga">Keluarga</option>
+                <option value="belajar">Belanja</option>
+                <option value="wahana">Wahana Bermain</option>
+                <option value="olahraga">Olahraga</option>
+                <option value="kuliner">Kuliner</option>
+                <option value="outdoor">Outdoor</option>
+                <option value="indoor">Indoor</option>
+                <option value="tanaman">Tanaman</option>
+                <option value="binatang">Binatang</option>
+                <option value="street food">Street Food</option>
+                <option value="sea food">Sea Food</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="eksotis">Eksotis</option>
+                <option value="lokal">Lokal</option>
+                <option value="tradisional">Tradisional</option>
+                <option value="modern">Modern</option>
+                <option value="lesehan">Lesehan</option>
+                <option value="prasmanan">Prasmanan</option>
+                <option value="kafe">Kafe</option>
             </select>
         <label for="name">Foto</label>
         <input type="file" name="name" id="name" class="form-control mb-3 mt-2" required>
