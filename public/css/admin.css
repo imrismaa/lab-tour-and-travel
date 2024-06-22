@@ -27,7 +27,7 @@
   background-color: #3198D4;
 }
 
-input {
+input, textarea {
   border: solid #919191 2px !important;
 }
 
@@ -221,4 +221,20 @@ a{
 .dashboard-content {
   overflow: auto;
   max-height: 90vh;
+}
+
+.detail-paket-img {
+  height: 65%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.font-neutral {
+  color: #6D6D6D;
+}
+
+.detail-paket-container{
+  padding: 0% 5%;
+  max-height: 90vh;
+  overflow: auto;
 }

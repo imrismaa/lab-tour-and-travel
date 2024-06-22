@@ -30,6 +30,14 @@ class PaketController extends Controller
     {
         return view('admin.tambah-destinasi');
     }
+    public function detailPaketAdmin()
+    {
+        return view('admin.detail-paket');
+    }
+    public function tambahJadwalDestinasi()
+    {
+        return view('admin.tambah-jadwal-destinasi');
+    }
 
     public function penginapan() 
     {
