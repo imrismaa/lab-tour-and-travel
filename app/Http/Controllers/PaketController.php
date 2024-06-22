@@ -18,7 +18,7 @@ class PaketController extends Controller
 
     public function dashboardAdmin()
     {
-        return view('layout.dashboard-nav');
+        return view('layouts.dashboard-nav');
     }
 
     public function destinasi()
@@ -31,7 +31,7 @@ class PaketController extends Controller
         return view('admin.tambah-destinasi');
     }
 
-    public function penginapan() 
+    public function penginapan()
     {
         return view('admin.penginapan');
     }
@@ -50,7 +50,7 @@ class PaketController extends Controller
     {
         return view('admin.tambah-transportasi');
     }
-    
+
     public function custom()
     {
         return view('admin.custom');
@@ -130,5 +130,5 @@ class PaketController extends Controller
     public function done()
     {
         return view('user.selesai');
-    }   
+    }
 }
