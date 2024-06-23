@@ -366,6 +366,7 @@ a{
     color: #919191;
 }
 
-#timeline .blue-dropdown{
+.blue-dropdown {
     border: 2px solid #3BB7FF !important;
+    border-radius: 5px;
 }
